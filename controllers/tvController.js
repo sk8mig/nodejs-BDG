@@ -28,7 +28,8 @@ obj.postArray = (req, res, next)=>{
 
 obj.updateArray = (req, res, next)=>{
     let tvFind = tvShows.findIndex(tvShow => tvShow.id ==  req.params.id);
-    if(tvFind<0)
+    
+    if(tvFind<0 || tvFind< -1)
         return  res.send({Error: 'Error indice no existe ' +  req.params.id });
     if(tvShows[tvFind].id != req.body.id)
         return  res.send({Error: 'Id diferente ' +  req.params.id + ' -> ' + req.body.id });    
