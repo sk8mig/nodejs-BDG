@@ -53,12 +53,6 @@ obj.deleteById = (req, res, next)=>{
     res.send(result);
 };
 
-const buildTVShow = (id, body) => {
-    return: {
-        id: body.id,
-        anio:body.anio,
-        pais: body.pais
-    }
-}
+
 
 module.exports = obj;
