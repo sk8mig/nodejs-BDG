@@ -6,7 +6,7 @@ const tvShows = [
         id:1,
         titulo: "shit",
         anio: 2017,
-        pais: "USA"
+        pais: "RUsia"
     },
     {
         id:2,
